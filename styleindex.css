@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  background-color: #edfff0;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  max-width: 100%;
+}
+
+header {
+  position: sticky;
+  top: 0;
+}
+
+nav {
+  /* background-color: #f875aa; */
+  height: 10vh;
+  position: sticky;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10vh 0 10vh;
+  align-items: center;
+  font-size: 18px;
+  color: #1a1a1a;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+}
+
+.nav-links li a {
+  display: flex;
+  justify-content: space-around;
+  margin-right: 3vh;
+  padding: 2vh;
+  text-decoration: none;
+  color: #1a1a1a;
+  font-weight: 600;
+}
+
+.name {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.nav-links-hover:hover {
+  color: #fdeded;
+}
+
+main {
+  min-height: calc(100vh - 20vh);
+}
+
+.big-box {
+  height: 80vh;
+  width: 80vh;
+  background-color: #af91866b;
+}
+
+/* .under-box {
+  position: relative;
+  width: 50vh;
+  height: 70vh;
+  margin-left: 50vh;
+  margin-bottom: 0;
+  background-color: #080808;
+} */
+
+.mypic {
+  position: absolute;
+  /* z-index: 10 */
+  top: 95px;
+  align-items: center;
+  justify-content: center;
+  margin-left: 50vh;
+  margin-bottom: 0;
+  background-image: url("mypic.jpeg");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  width: 50vh;
+  height: 70vh;
+  box-shadow: 10px 0 5px -2px #888;
+}
+
+@media screen and (max-width: 480px) {
+  nav {
+    background-color: #fff;
+  }
+}
