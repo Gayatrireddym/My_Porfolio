@@ -22,26 +22,138 @@
       </nav>
     </header>
     <main>
-      <div class="box">
-        <div class="mypic"></div>
-        <div class="details">
-          <ul>
-            <li><strong>Name:</strong> Manikanti Gayatri Reddy</li>
-            <li><strong>Profile:</strong> Student & Developer</li>
-            <li><strong>Location:</strong> Hyderbad</li>
-            <li><strong>Email:</strong> gayatrireddywgl@gmail.com</li>
-          </ul>
+      <section id="page1">
+        <div class="box">
+          <div class="mypic"></div>
+          <div class="details">
+            <ul>
+              <li><strong>Name:</strong> Manikanti Gayatri Reddy</li>
+              <li><strong>Profile:</strong> Student & Developer</li>
+              <li><strong>Location:</strong> Hyderbad</li>
+              <li><strong>Email:</strong> gayatrireddywgl@gmail.com</li>
+            </ul>
+          </div>
         </div>
-      </div>
-      <div class="text-box">
-        <div class="heading">About Me</div>
-      </div>
+        <div class="text-box">
+          <div class="heading"><h2>About Me ♡</h2></div>
+          <div class="text">
+            <p>
+              I build websities, break them, fix them—and somehow make them look
+              better.
+            </p>
+            <ul>
+              <li>
+                Btech Computer Science student who turns caffeine, curiosity and
+                code into meaningful, functional, and well-strucutred web
+                experiences.
+              </li>
+              <li>
+                Frontend Web Developer with a strong passion for crafting clean,
+                creative and intuitive interfaces that users genuinely enjoy
+                interacting with.
+              </li>
+              <li>
+                Developed real-world projects including an Indian Cookbook
+                website and well-designed Amazon and Netflix clones, focusing on
+                layout accuracy and responsiveness.
+              </li>
+              <li>
+                A mini-game enthusiast who loves blending logic, creativity, and
+                Javascript to create fun, interactive browser-based experiences.
+              </li>
+              <li>
+                Completed a Frontend Development Internship at ServCrust,
+                Hyderabad, contributing to real product features using Angular
+                in a professional environment.
+              </li>
+              <li>
+                Hands-on experience with Angular, HTML, CSS, and JavaScript,
+                building responsive, component-based, and scalable frontend
+                applications.
+              </li>
+              <li>
+                A continuous learner and problem-solver who enjoys experimenting
+                with new ideas, breaking things during development, and refining
+                them into better solutions.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="skills-section">
+        <h2>My Skills</h2>
+
+        <div class="skill">
+          <div class="skill-header">
+            <span>HTML, CSS, JavaScript</span>
+          </div>
+
+          <div class="progress-bar">
+            <div class="progress-fill" data-level="95"></div>
+          </div>
+        </div>
+
+        <div class="skill">
+          <div class="skill-header">
+            <span>C, Python, Java</span>
+          </div>
+
+          <div class="progress-bar">
+            <div class="progress-fill" data-level="90"></div>
+          </div>
+        </div>
+
+        <div class="skill">
+          <div class="skill-header">
+            <span>Critical Thinking, Aptitude</span>
+          </div>
+
+          <div class="progress-bar">
+            <div class="progress-fill" data-level="80"></div>
+          </div>
+        </div>
+
+        <div class="skill">
+          <div class="skill-header">
+            <span>Angular, React.js, Node.js</span>
+          </div>
+
+          <div class="progress-bar">
+            <div class="progress-fill" data-level="75"></div>
+          </div>
+        </div>
+      </section>
       <hr class="ver-line-top" />
       <div class="ver-text">About</div>
       <hr class="ver-line-bottom" />
     </main>
-    <footer>
+    <!-- <footer>
       <div class="footer">© 2025 Gayatri Reddy. Built with passion & code.</div>
-    </footer>
+    </footer> -->
   </body>
 </html>
+
+<script>
+  const progressBars = document.querySelectorAll(".progress-fill");
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          const level = entry.target.dataset.level;
+          entry.target.style.width = level + "%";
+
+          const text = entry.target
+            .closest(".skill")
+            .querySelector(".loading-text");
+          text.textContent = "Loaded ✔";
+
+          observer.unobserve(entry.target);
+        }
+      });
+    },
+    { threshold: 0.6 }
+  );
+
+  progressBars.forEach((bar) => observer.observe(bar));
+</script>
