@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gayatri &#8226; Portfolio</title>
+    <link rel="shortcut icon" href="sunicon.webp" type="image/x-icon" />
+    <link rel="stylesheet" href="stylecontact.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="name">🌻 Gayatri</div>
+        <div class="links">
+          <ul class="nav-links">
+            <li><a href="index.html" class="nav-links-hover">Home</a></li>
+            <li><a href="about.html" class="nav-links-hover">About</a></li>
+            <li>
+              <a href="projects.html" class="nav-links-hover">Projects</a>
+            </li>
+            <li><a href="#" class="nav-links-hover">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="contact">
+        <div class="myinfo">
+          <h2>Contact Info</h2>
+          <section class="info">
+            <div class="icon">
+              <i class="fa-solid fa-envelope" style="color: #af9186"></i>
+            </div>
+            <div class="text">
+              EMAIL <br />
+              gayatrireddywgl@gmail.com
+            </div>
+          </section>
+          <section class="info">
+            <div class="icon">
+              <i class="fa-solid fa-phone" style="color: #af9186"></i>
+            </div>
+            <div class="text">
+              PHONE <br />
+              +91 8341097787
+            </div>
+          </section>
+          <section class="info">
+            <div class="icon">
+              <i class="fa-solid fa-location-dot" style="color: #af9186"></i>
+            </div>
+            <div class="text">
+              LOCATION <br />
+              Gachibowli, Hyderabad
+            </div>
+          </section>
+          <div class="social">
+            <h4>Social:</h4>
+            <a href="https://github.com/Gayatrireddym" target="_blank"
+              ><i class="fa-brands fa-github" style="color: #af9186"></i
+            ></a>
+            <a
+              href="https://www.linkedin.com/in/gayatri-reddy/"
+              target="_blank"
+            >
+              <i class="fa-brands fa-linkedin" style="color: #af9186"></i>
+            </a>
+            <a href="https://www.instagram.com/gayu_0_7_0_5/" target="_blank">
+              <i class="fa-brands fa-instagram" style="color: #af9186"></i>
+            </a>
+          </div>
+        </div>
+        <div class="con-form">
+          <h2>Let's work together</h2>
+          <form
+            id="contact-form"
+            action="mailto:your-email@example.com"
+            method="post"
+            enctype="text/plain"
+          >
+            <div class="form-group">
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="name" required />
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email:</label>
+              <input type="text" id="email" name="email" required />
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message:</label>
+              <textarea id="message" name="message" required></textarea>
+            </div>
+
+            <button type="button" id="send-btn" class="send-btn">Send</button>
+          </form>
+        </div>
+      </section>
+
+      <hr class="ver-line-top" />
+      <div class="ver-text">Contact</div>
+      <hr class="ver-line-bottom" />
+    </main>
+    <footer>
+      <div class="footer">
+        © 2025 Gayatri Reddy. Built with passion & late night sessions.
+      </div>
+    </footer>
+  </body>
+</html>
+<script>
+  document.getElementById("send-btn").addEventListener("click", function () {
+    const name = document.getElementById("name").value;
+    const email = document.getElementById("email").value;
+    const message = document.getElementById("message").value;
+
+    // Construct the mailto URL with encoded values
+    const mailtoLink = `mailto:gayatrireddywgl@gmail.com
+    subject=Contact%20Form%20Submission&body=Name:%20${encodeURIComponent(
+      name
+    )}%0AEmail:%20${encodeURIComponent(
+      email
+    )}%0AMessage:%20${encodeURIComponent(message)}`;
+
+    // Open the default email client
+    window.location.href = mailtoLink;
+  });
+</script>
