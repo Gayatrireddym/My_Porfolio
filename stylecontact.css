@@ -181,6 +181,9 @@ textarea {
   transform: translateY(1px);
 }
 
+.send:hover {
+}
+
 .ver-line-top {
   position: fixed;
   right: 0;
