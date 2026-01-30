@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -11,7 +11,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
     />
   </head>
-  <body>
+  <body class="darkmode">
     <header>
       <nav>
         <div class="name">🌻 Gayatri</div>
@@ -122,9 +122,9 @@
     // Construct the mailto URL with encoded values
     const mailtoLink = `mailto:gayatrireddywgl@gmail.com
     subject=Contact%20Form%20Submission&body=Name:%20${encodeURIComponent(
-      name
+      name,
     )}%0AEmail:%20${encodeURIComponent(
-      email
+      email,
     )}%0AMessage:%20${encodeURIComponent(message)}`;
 
     // Open the default email client

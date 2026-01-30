@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -7,7 +7,7 @@
     <link rel="shortcut icon" href="sunicon.webp" type="image/x-icon" />
     <link rel="stylesheet" href="styleabout.css" />
   </head>
-  <body>
+  <body class="darkmode">
     <header>
       <nav>
         <div class="name">🌻 Gayatri</div>
@@ -166,7 +166,7 @@
         }
       });
     },
-    { threshold: 0.6 }
+    { threshold: 0.6 },
   );
 
   progressBars.forEach((bar) => observer.observe(bar));

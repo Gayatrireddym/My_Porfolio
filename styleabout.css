@@ -6,7 +6,8 @@
 html,
 body {
   background-color: #edfff0;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+  font-family:
+    "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   margin: 0;
   display: flex;
@@ -61,7 +62,9 @@ nav {
   left: 50%;
   position: absolute;
   background: #1a1a1a;
-  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  transition:
+    width 0.3s ease 0s,
+    left 0.3s ease 0s;
   width: 0;
 }
 
@@ -243,4 +246,33 @@ main {
   align-items: center;
   justify-content: center;
   font-size: 0.8rem;
+}
+
+.darkmode {
+  background-color: #1a1a1a;
+  color: #edfff0;
+}
+
+.darkmode nav {
+  color: #edfff0;
+}
+
+.darkmode nav a {
+  color: #edfff0;
+}
+
+.darkmode .nav-links-hover {
+  color: #edfff0;
+}
+
+.darkmode .nav-links-hover::after {
+  background-color: #edfff0;
+}
+
+.darkmode .progress-bar {
+  background-color: #edfff0;
+}
+
+.darkmode .progress-fill {
+  background: linear-gradient(90deg, #ca9e8d, #d8a895);
 }
