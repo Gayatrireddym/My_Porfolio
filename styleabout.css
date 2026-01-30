@@ -33,6 +33,7 @@ nav {
 .nav-links {
   display: flex;
   list-style: none;
+  align-items: center;
 }
 
 .name {
@@ -275,4 +276,67 @@ main {
 
 .darkmode .progress-fill {
   background: linear-gradient(90deg, #ca9e8d, #d8a895);
+}
+
+.theme-switch {
+  border: none;
+  padding: 5px;
+  border-radius: 50%;
+  background-color: #edfff0;
+  cursor: pointer;
+}
+
+#toggledark {
+  font-size: 1.3rem;
+}
+
+#theme-switch {
+  background-color: #af91866b;
+  border: none;
+  border-radius: 40%;
+  padding: 10px;
+  cursor: pointer;
+}
+
+#theme-switch i:last-child {
+  display: none;
+}
+
+.darkmode #theme-switch {
+  background-color: #af91866b;
+  padding: 10px;
+  align-items: center;
+}
+
+.darkmode #theme-switch i:first-child {
+  display: none;
+}
+
+.darkmode #theme-switch i:last-child {
+  display: block;
+}
+
+.darkmode #toggledark {
+  color: #edfff0;
+}
+
+.darkmode {
+  background-color: #1a1a1a;
+  color: #edfff0;
+}
+
+.darkmode nav {
+  color: #edfff0;
+}
+
+.darkmode nav a {
+  color: #edfff0;
+}
+
+.darkmode .nav-links-hover {
+  color: #edfff0;
+}
+
+.darkmode .nav-links-hover::after {
+  background-color: #edfff0;
 }
